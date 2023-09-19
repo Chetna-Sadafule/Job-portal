@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Job-Portal</title>
+   <!-- Google font family link -->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- custom style css link -->
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="css/responsive.css">
+   <!-- responsive css link -->
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> </head>
+
+<body>
+   <header>
+      <div class="header">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-3">
+                  <div class="header_logo">
+                     <a href="index.html"> <img src="images/logo.png" alt="header_logo"></a>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="main_menu">
+                     <ul>
+                        <li><a class="nav-link" href="#Fetures">Fetures</a></li>
+                        <li><a class="nav-link" href="#Pricing"> Pricing</a></li>
+                        <li>
+                           <div class="custom-select">
+                              <select>
+                                 <option value="0">English</option>
+                                 <option value="1">عربي</option>
+                              </select>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="login-menu">
+                     <ul>
+                        <li><a class="nav-link" href="login.html">login</a></li>
+                        <li><a class="nav-link" href="signup.html">signup</a></li>
+                     </ul> <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span> </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Mobie View-->
+      <div id="mobile_menu">
+         <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+               <ul>
+                  <li><a class="nav-link" href="#Fetures">Fetures</a></li>
+                  <li><a class="nav-link" href="#Pricing">Pricing</a></li>
+                  <li>
+                     <a class="nav-link" href="#">
+                        <select name="language" id="language" form="language">
+                           <option value="volvo" lang="en">English</option>
+                           <option value="volvo" lang="ar">عربي</option>
+                         
+                        </select>
+                     </a>
+                  </li>
+                  <a href="javascript:void(0)" class="sign_in_btn" onclick="closeNav()" data-toggle="modal" data-target="#popUpWindow"></a>
+                  </li>
+               </ul>
+         </div>
+      </div>
+   </header>
+   <div class="header-section1">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-7">
+               <div class="header_section_content">
+                  <h2>Find Your Favorite Job And Apply With A <span>Super Easy Way</span></h2>
+                  <p>Lorem Ipsum is simply dummy text of the printing</p>
+                  <div class="header-button"> <a href="dashboard.html">Get Started</a> </div>
+               </div>
+            </div>
+            <div class="col-md-5">
+               <div class="header_section_image"> <img src="images/job1.png"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="second-section">
+      <div class="container">
+         <p>Making An Impact</p>
+         <h2>In The Era Of <span>Remote Hiring</span></h2>
+         <div class="second-section-1">
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="inner-section"> <img src="images/Group37.png" class="icon"> <img src="images/Ellipse8.png" class="Ellipse8">
+                     <div class="counter">
+                        <div class="value" akhi="1200">0 <span><i class="fa fa-plus"></i></span></div>
+                        <p> Users</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="inner-section"> <img src="images/Group12.png" class="icon"> <img src="images/Ellipse9.png" class="Ellipse9">
+                     <div class="counter">
+                        <div class="value" akhi="4000">0 <i class="fa fa-plus"></i></div>
+                        <p> Companies</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="inner-section"> <img src="images/Group13.png" class="icon">
+                     <div class="counter"> <img src="images/Ellipse8.png" class="Ellipse10">
+                        <div class="value" akhi="1000">0 <i class="fa fa-plus"></i></div>
+                        <p> Recruitments</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="about-section">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6 col-lg-6 col-sm-6">
+               <div class="about-section-image"> <img src="images/about.png"> </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-6">
+               <div class="about-section-content">
+                  <h3>Finds Million Of Jobs And</h3>
+                  <h2>Achieve <span>Success</span></h2>
+                  <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries, But Also The Leap Into Electronic Typesetting, Remaining Essentially Unchanged</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="work-flow" id="Fetures">
+      <div class="container">
+         <div class="work-flow-heading">
+            <p>How Does</p>
+            <h3>It <span>Work?</span></h3> </div>
+         <div class="row">
+            <div class="work-flow-section1">
+               <div class="col-md-6 col-lg-6 col-sm-6">
+                  
+                  <div class="work-flow-content">
+                     <img src="images/01.png" class="flow01">
+                     <h2>Filter A <span>Suitable Job</span></h2>
+                     <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries, But Also The Leap Into Electronic Typesetting, Remaining Essentially Unchanged</p>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-6 col-sm-6">
+                  <div class="work-flow-image"> <img src="images/work1.png"> </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="work-flow-section2">
+               <div class="col-md-6 col-lg-6 col-sm-6">
+                  <div class="work-flow-image"> <img src="images/Apply-Online.png"> </div>
+               </div>
+               <div class="col-md-6 col-lg-6 col-sm-6">
+                  <div class="work-flow-content">
+                      <img src="images/02.png" class="flow02">
+                     <h2>Apply <span>Online</span></h2>
+                     <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries, But Also The Leap Into Electronic Typesetting, Remaining Essentially Unchanged</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="work-flow-section3">
+               <div class="col-md-6 col-lg-6 col-sm-6">
+                  <div class="work-flow-content">
+                      <img src="images/03.png" class="flow03">
+                     <h2>Get <span>Hired</span></h2>
+                     <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries, But Also The Leap Into Electronic Typesetting, Remaining Essentially Unchanged</p>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-6 col-sm-6">
+                  <div class="work-flow-image"> <img src="images/Get-Hired.png"> </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+   <div class="Category-section">
+      <div class="container">
+         <div class="Category-section-heading">
+            <p>Explore By Choosing</p>
+            <h3><span>Category</span></h3> </div>
+         <div class="Category-section-1">
+            <div class="row">
+               <div class="col-md-4"></div>
+               <div class="col-md-4"></div>
+               <div class="col-md-4">
+                  <div class="selction-Designer">
+                     <select>
+                        <option>Designer</option>
+                        <option>Designer</option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="Category_desc">
+                     <div class="content"> <img src="images/image1.png">
+                        <div class="content-overlay"></div>
+                        <div class="content-details_outercontent">
+                           <h3><a href="#">Web Designer</a></h3> </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="Category_desc">
+                     <div class="content"> <img src="images/image2.png">
+                        <div class="content-overlay"></div>
+                        <div class="content-details_outercontent">
+                           <h3><a href="#">Ui/Ux Designer</a></h3> </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="Category_desc">
+                     <div class="content"> <img src="images/image3.png">
+                        <div class="content-overlay"></div>
+                        <div class="content-details_outercontent">
+                           <h3><a href="#">Graphic Designer</a></h3> </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="faq_section">
+      <div class="container">
+         <div class="faq_section-heading">
+            <p>Frequently Asked</p>
+            <h2><span>Questions</span></h2> </div>
+         <div class="row">
+            <div class="col-sm-6 col-lg-6 col-md-6">
+               <div class="FAQ_toggle">
+                  <div id="accordion">
+                     <div class="card">
+                        <div class="card-header" id="headingOne">
+                           <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Lorem Ipsum is simply dummy text </button>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                           <div class="card-body">
+                              <p> Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries, But Also The Leap Into Electronic Typesetting, Remaining Essentially Unchanged</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="card-header" id="headingTwo">
+                           <h5>
+                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                 Lorem Ipsum is simply dummy text 
+                                 </button>
+                              </h5> </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                           <div class="card-body">
+                              <p> Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries, But Also The Leap Into Electronic Typesetting, Remaining Essentially Unchanged</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="card-header" id="headingThree">
+                           <h5>
+                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                 Lorem Ipsum is simply dummy text 
+                                 </button>
+                              </h5> </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                           <div class="card-body">
+                              <p> Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries, But Also The Leap Into Electronic Typesetting, Remaining Essentially Unchanged</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-6 col-md-6">
+               <div class="FAQ_image"> <img src="images/faq-image.png"> </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="your-plan" id="Pricing">
+      <div class="container">
+         <div class="your-plan-heading">
+            <p>Start Now</p>
+            <h3>
+               Your <span> Plan.</span></h3>
+            </div>
+            <div class="plan-details">
+               <ul>
+                  <li><a href="index.html"> <img src="images/logo.png" alt="header_logo"></a></li>
+                  <li>
+                     <a href="#">
+                        <h4>Free</h4>
+                        <h6>$</h6>
+                        0/<span>mo</span></p>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <h4>Startup</h4>
+                        <p>
+                        <h6>$</h6>
+                        9.<span>99/mo</span></p>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <h4>Startup</h4>
+                        <p>
+                        <h6>$</h6>
+                        24.<span>99/mo</span></p>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <h4>Startup</h4>
+                        <p>
+                        <h6>$</h6>
+                        49.<span>99/mo</span></p>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <div class="plan-details-table">
+               <table>
+                  <tr  class="rightcontent">
+                     <th>
+                        <p>1. Lorem Ipsum Is Simply Dummy</p>
+                     </th>
+                     <td style="border-radius: 15px 0px 0px 0px;">01</td>
+                     <td>05</td>
+                     <td>01</td>
+                     <td>05</td>
+                     <td style="border-radius: 0px 15px 0px 0px;">Unlimited</td>
+                  </tr>
+                  <tr  class="rightcontent">
+                     <th>
+                        <p>2. Lorem Ipsum Is Simply Dummy</p>
+                     </th>
+                     <td>01</td>
+                     <td>05</td>
+                     <td>01</td>
+                     <td>05</td>
+                     <td>Unlimited</td>
+                  </tr>
+                  <tr  class="rightcontent">
+                     <th>
+                        <p>3. Lorem Ipsum Is Simply Dummy</p>
+                     </th>
+                     <td><i class="fa fa-check-circle check"></i></td>
+                     <td><i class="fa fa-check-circle check"></i></td>
+                     <td><i class="fa fa-check-circle check" ></i></td>
+                     <td><i class="fa fa-check-circle check"></i></td>
+                     <td><i class="fa fa-check-circle check"></i></td>
+                  </tr>
+                  <tr  class="rightcontent">
+                     <th>
+                        <p>4. Lorem Ipsum Is Simply Dummy</p>
+                     </th>
+                     <td><i class="fa fa-close uncheck"></i></td>
+                     <td><i class="fa fa-check-circle check"></i></td>
+                     <td><i class="fa fa-check-circle check" ></i></td>
+                     <td><i class="fa fa-check-circle check"></i></td>
+                     <td><i class="fa fa-check-circle check"></i></td>
+                  </tr>
+                  <tr  class="rightcontent">
+                     <th>
+                        <p>5. Lorem Ipsum Is Simply Dummy</p>
+                     </th>
+                     <td><i class="fa fa-close uncheck"></i></td>
+                     <td><i class="fa fa-check-circle check"></i></td>
+                     <td><i class="fa fa-check-circle check" ></i></td>
+                     <td><i class="fa fa-check-circle check"></i></td>
+                     <td><i class="fa fa-check-circle check"></i></td>
+                  </tr>
+                  <tr  class="rightcontent">
+                     <th>
+                        <p>6. Lorem Ipsum Is Simply Dummy</p>
+                     </th>
+                     <td><i class="fa fa-close uncheck"></i></td>
+                     <td><i class="fa fa-check-circle check"></i></td>
+                     <td><i class="fa fa-check-circle check" ></i></td>
+                     <td><i class="fa fa-check-circle check"></i></td>
+                     <td><i class="fa fa-check-circle check"></i></td>
+                  </tr>
+                  <tr  class="rightcontent">
+                     <th>
+                        <p>7. Lorem Ipsum Is Simply Dummy</p>
+                     </th>
+                     <td><i class="fa fa-close uncheck"></i></td>
+                     <td><i class="fa fa-check-circle check"></i></td>
+                     <td><i class="fa fa-check-circle check" ></i></td>
+                     <td><i class="fa fa-check-circle check"></i></td>
+                     <td><i class="fa fa-check-circle check"></i></td>
+                  </tr>
+                  <tr  class="rightcontent">
+                     <th>
+                        <p>8. Lorem Ipsum Is Simply Dummy</p>
+                     </th>
+                     <td><i class="fa fa-close uncheck"></i></td>
+                     <td><i class="fa fa-check-circle check"></i></td>
+                     <td><i class="fa fa-check-circle check" ></i></td>
+                     <td><i class="fa fa-check-circle check"></i></td>
+                     <td><i class="fa fa-check-circle check"></i></td>
+                  </tr>
+                  <tr  class="rightcontent">
+                     <th></th>
+                     <td>
+                        <p><a href="#">See More </a></p>
+                     </td>
+                     <td>
+                        <p><a href="#">See More </a></p>
+                     </td>
+                     <td>
+                        <p><a href="#">See More </a></p>
+                     </td>
+                     <td>
+                        <p><a href="#">See More </a></p>
+                     </td>
+                     <td>
+                        <p><a href="#">See More </a></p>
+                     </td>
+                  </tr>
+                  <tfoot>
+                     <tr  class="rightcontent">
+                        <th></th>
+                        <td style="border-radius: 0px 0px 0px 15px;"><a href="#">Get Started</a></td>
+                        <td><a href="#">Get Started</a></td>
+                        <td><a href="#">Get Started</a></td>
+                        <td><a href="#">Get Started</a></td>
+                        <td style="border-radius: 0px 0px 15px 0px;"><a href="#">Get Started</a></td>
+                     </tr>
+                  </tfoot>
+               </table>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="Say-About-Us">
+      <div class="container">
+         <div class="About-Us-heading">
+            <p>What They</p>
+            <h3>
+            Say <span>About Us</span>
+         </div>
+         <div class="About-Us-background">
+            <div class="row section1">
+               <div class="col-md-6">
+                  <div class="wrapper">
+                     <div class="images-section">
+                        <img src="images/map1.png">
+                     </div>
+                     <div class="tooltip">
+                        <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S,</p>
+                        <ul>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                        </ul>
+                        <img src="images/Group58.png">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="wrapper">
+                     <div class="images-section">
+                        <img src="images/map2.png">
+                     </div>
+                     <div class="tooltip">
+                        <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S,</p>
+                        <ul>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                        </ul>
+                        <img src="images/Group58.png">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row section2">
+               <div class="col-md-12">
+                  <div class="wrapper">
+                     <div class="images-section">
+                        <img src="images/map3.png">
+                     </div>
+                     <div class="tooltip">
+                        <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S,</p>
+                        <ul>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                        </ul>
+                        <img src="images/Group58.png">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row section3">
+               <div class="col-md-6">
+                  <div class="wrapper">
+                     <div class="images-section">
+                        <img src="images/map4.png" class="image4">
+                     </div>
+                     <div class="tooltip">
+                        <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S,</p>
+                        <ul>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                        </ul>
+                        <img src="images/Group58.png">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="wrapper">
+                     <div class="images-section">
+                        <img src="images/map5.png">
+                     </div>
+                     <div class="tooltip">
+                        <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S,</p>
+                        <ul>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                           <li><a href="#"><i class="fa fa-star"></i></a></li>
+                        </ul>
+                        <img src="images/Group58.png">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+    </div>
+     <!-- footer start -->
+   <footer>
+      <div class="footer_section_form">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 col-sm-6 col-lg-6">
+                  <div class="form_content">
+                     <p>Sign Up For</p>
+                     <h2>Our <span>Newsletter</span></h2>
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-6 col-lg-6">
+                  <div class="email-container">
+                     <form action="#">
+                        <input type="email" placeholder="Enter Email ID">
+                        <button type="submit"> <img src="images/arrow.png"></button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+    
+      <div class="footer_section">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-2">
+                     <div class="footer_section1">
+                        <a href="index.html"> <img src="images/logo.png"> </a>
+                     </div>
+                  </div>
+                  <div class="col-md-8">
+                     <div class="footer-menu">
+                        <ul>
+                         
+                           <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+                           <li><a class="nav-link" href="terms.html">Terms And Condition</a></li>
+                           <li><a class="nav-link" href="privacy-policy.html">Privacy Policy</a></li>
+                       
+                            <li>
+                           <div class="footer-language-selcter">
+                              <select>
+                                 <option value="0">English</option>
+                                 <option value="1">عربي</option>
+                              </select>
+                           </div>
+                        </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-2">
+                     <div class="footer-icon">
+                        <ul class="footer_links">
+                           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                           <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                           <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="copyride">
+                        <p>© 2021 Lorem Ipsum — All Rights Reserved.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      </div>
+   </footer>
+   </body>
+
+ <!-- footer close -->
+<!-- Bootstrap core JS-->
+   <script type="js/bootstrap.min.js"></script>
+   <script type="js/jquery.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous">
+</script>
+<script src="src/langs.min.js"></script>
+<script src="src/jquery.multilang.min.js"></script>
+   <script type="text/javascript">
+ 
+
+function openNav() {
+   document.getElementById("mySidenav").style.width = "320px";
+}
+
+function closeNav() {
+   document.getElementById("mySidenav").style.width = "0";
+}
+
+function inVisible(element) {
+  //Checking if the element is
+  //visible in the viewport
+  var WindowTop = $(window).scrollTop();
+  var WindowBottom = WindowTop + $(window).height();
+  var ElementTop = element.offset().top;
+  var ElementBottom = ElementTop + element.height();
+  //animating the element if it is
+  //visible in the viewport
+  if ((ElementBottom <= WindowBottom) && ElementTop >= WindowTop)
+    animate(element);
+}
+
+const counters = document.querySelectorAll('.value');
+const speed = 200;
+
+counters.forEach( counter => {
+   const animate = () => {
+      const value = +counter.getAttribute('akhi');
+      const data = +counter.innerText;
+     
+      const time = value / speed;
+     if(data < value) {
+          counter.innerText = Math.ceil(data + time);
+          setTimeout(animate, 1);
+        }else{
+          counter.innerText = value;
+        }
+     
+   }
+   
+   animate();
+});
+</script>
+
+
+<script>
+var x, i, j, l, ll, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select");
+l = x.length;
+for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            yl = y.length;
+            for (k = 0; k < yl; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+}
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < xl; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);
+</script>
+
+<script type="text/javascript">
+var x, i, j, l, ll, selElmnt, a, b, c;
+/*look for any elements with the class "footer-language-selcter":*/
+x = document.getElementsByClassName("footer-language-selcter");
+l = x.length;
+for(i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for(j = 1; j < ll; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+      /*when an item is clicked, update the original select box,
+      and the selected item:*/
+      var y, i, k, s, h, sl, yl;
+      s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+      sl = s.length;
+      h = this.parentNode.previousSibling;
+      for(i = 0; i < sl; i++) {
+        if(s.options[i].innerHTML == this.innerHTML) {
+          s.selectedIndex = i;
+          h.innerHTML = this.innerHTML;
+          y = this.parentNode.getElementsByClassName("same-as-selected");
+          yl = y.length;
+          for(k = 0; k < yl; k++) {
+            y[k].removeAttribute("class");
+          }
+          this.setAttribute("class", "same-as-selected");
+          break;
+        }
+      }
+      h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+    /*when the select box is clicked, close any other select boxes,
+    and open/close the current select box:*/
+    e.stopPropagation();
+    closeAllSelect(this);
+    this.nextSibling.classList.toggle("select-hide");
+    this.classList.toggle("select-arrow-active");
+  });
+}
+
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for(i = 0; i < yl; i++) {
+    if(elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for(i = 0; i < xl; i++) {
+    if(arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);
+</script>
+
+</html>
